@@ -451,7 +451,7 @@ void min_prix_jours() {
                 }
         }while (x!=0);
 
-
+printf("test pour le git hub idee branche et tag\n");
 
 
 
