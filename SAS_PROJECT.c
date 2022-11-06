@@ -136,13 +136,15 @@ void Acheter(produit *tab){
 void Recher_CodeBa(produit *tab, int N, char*code_cherch){
 int c=0;
     for(i=0;i<N;i++){
-            if(strcmp(tab[i].CodeBar,code_cherch)==0){
+        c=strcmp(tab[i].CodeBar,code_cherch)==0;
+            if(c){
                 printf("\n\tProduit %d: ",i+1);
                 printf("\nNom : %s",tab[i].nom);
                 printf("\nCodeBar: %s",tab[i].CodeBar);
                 printf("\nQuantite: %d",tab[i].quantite);
                 printf("\nPrix: %.f\n",tab[i].prix);
-              c++;// c ++ pour le but de quiter le programme au moment que la conditions est realise
+             printf("%d",c);
+             break;// pour le but de quiter le programme au moment que la conditions est realise
             }
     }
     if(c==0) {
